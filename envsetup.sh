@@ -1,14 +1,15 @@
 #!/bin/bash
 
-if [ -d "env" ] 
+if [ -d "barcode-env" ] 
 then
     echo "Python virtual environment exists." 
 else
     python3 -m venv env
 fi
 
-source env/bin/activate
+source barcode-env/bin/activate
 
+echo "Python virtual environment activated." 
 
 pip3 install -r requirements.txt
 

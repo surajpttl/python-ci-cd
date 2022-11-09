@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source env/bin/activate
+source barcode-env/bin/activate
 
 echo "ENV is activated  "
 
