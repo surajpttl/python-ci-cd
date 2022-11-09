@@ -8,7 +8,7 @@ export DEVELOPMENT_FLAG=local
 
 echo "DEVELOPMENT_FLAG is set on Local "
 
-cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line
+cd /var/lib/jenkins/workspace/python-ci-cd-testing
 
 python3 manage.py makemigrations
 python3 manage.py migrate
@@ -16,7 +16,7 @@ python3 manage.py collectstatic -- no-input
 
 echo "Migrations done"
 
-#cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line
+#cd /var/lib/jenkins/workspace/python-ci-cd-testing
 
 #sudo cp -rf gunicorn.socket /etc/systemd/system/
 #sudo cp -rf gunicorn.service /etc/systemd/system/
