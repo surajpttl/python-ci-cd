@@ -24,7 +24,7 @@ sudo cp -rf gunicorn.service /etc/systemd/system/
 echo "$USER"
 echo "$PWD"
 
-python3 manage.py runserver 8001
+#python3 manage.py runserver 8001
 
 
 #sudo systemctl daemon-reload
