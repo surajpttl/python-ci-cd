@@ -8,6 +8,8 @@ export DEVELOPMENT_FLAG=local
 
 echo "DEVELOPMENT_FLAG is set on Local "
 
+sudo chmod 777 var/lib/jenkins/workspace/python-ci-cd-testing
+
 cd /var/lib/jenkins/workspace/python-ci-cd-testing
 
 python3 manage.py makemigrations
@@ -24,7 +26,7 @@ sudo cp -rf gunicorn.service /etc/systemd/system/
 echo "$USER"
 echo "$PWD"
 
-#python3 manage.py runserver 8001
+python3 manage.py runserver 8002
 
 
 #sudo systemctl daemon-reload
