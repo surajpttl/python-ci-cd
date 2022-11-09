@@ -1,13 +1,13 @@
 #!/bin/bash
 
-if [ -d "barcode-env" ] 
+if [ -d "env" ] 
 then
     echo "Python virtual environment exists." 
 else
-    python3 -m venv env
+    sudo python3 -m venv env
 fi
 
-source barcode-env/bin/activate
+source env/bin/activate
 
 echo "Python virtual environment activated." 
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source barcode-env/bin/activate
+source env/bin/activate
 
 echo "ENV is activated  "
 
@@ -16,27 +16,27 @@ python3 manage.py collectstatic -- no-input
 
 echo "Migrations done"
 
-cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line
+#cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line
 
-sudo cp -rf gunicorn.socket /etc/systemd/system/
-sudo cp -rf gunicorn.service /etc/systemd/system/
+#sudo cp -rf gunicorn.socket /etc/systemd/system/
+#sudo cp -rf gunicorn.service /etc/systemd/system/
 
-echo "$USER"
-echo "$PWD"
-
-
-
-sudo systemctl daemon-reload
-sudo systemctl start gunicorn
-
-echo "Gunicorn has started."
-
-sudo systemctl enable gunicorn
-
-echo "Gunicorn has been enabled."
-
-sudo systemctl restart gunicorn
+#echo "$USER"
+#echo "$PWD"
 
 
-sudo systemctl status gunicorn
+
+#sudo systemctl daemon-reload
+#sudo systemctl start gunicorn
+
+#echo "Gunicorn has started."
+
+#sudo systemctl enable gunicorn
+
+#echo "Gunicorn has been enabled."
+
+#sudo systemctl restart gunicorn
+
+
+#sudo systemctl status gunicorn
 
