@@ -62,8 +62,8 @@ class LineMaster(models.Model):
 
 class StationMaster(models.Model):
     dt_station_id =models.BigIntegerField(unique=True)
-    name=models.CharField(max_length=100)
-    number=models.CharField(max_length=100)
+    name=models.CharField(max_length=120)
+    number=models.CharField(max_length=120)
     dt_line_id =models.ForeignKey(LineMaster, models.DO_NOTHING, blank=False, null=False) 
     updated_on = models.DateTimeField(blank=False, null=False)
     class Meta:
