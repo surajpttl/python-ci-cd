@@ -2,7 +2,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/django-cicd/app
+cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line/barcode_configurator
 
 python3 manage.py makemigrations
 python3 manage.py migrate
