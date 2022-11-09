@@ -9,6 +9,7 @@ Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/python-ci-cd-testing
 ExecStart=/var/lib/jenkins/workspace/python-ci-cd-testing/env/bin/gunicorn --workers 3 --log-level debug --error-logfile /var/lib/jenkins/workspace/python-ci-cd-testing/error.log --bind unix:/run/gunicorn.sock app.wsgi:application
 
+
 [Install]
 WantedBy=multi-user.target
 
