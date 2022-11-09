@@ -10,7 +10,7 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py collectstatic -- no-input
 echo "Migrations done"
-python3 manage.py runserver 8002
+python3 manage.py runserver 8003
 
 #cd /var/lib/jenkins/workspace/python-ci-cd-testing
 #sudo cp -rf gunicorn.socket /etc/systemd/system/
