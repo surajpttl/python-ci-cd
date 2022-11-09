@@ -2,7 +2,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line/barcode_configurator
+cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line
 
 python3 manage.py makemigrations
 python3 manage.py migrate
