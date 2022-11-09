@@ -1,0 +1,23 @@
+{
+"DB_ENGINE": "django.db.backends.postgresql",
+"DB_NAME": "ep_assemby_configurator_db",
+"DB_USER": "spp920677",
+"DB_PASSWORD": "spp920677",
+"DB_HOST": "127.0.0.1",
+"DB_PORT": "5432",
+"DB_TEST_NAME": "configurator_testing_db",  
+"DIGITAL_TWINS_URLS":{
+        "local": {
+            "dev_keycloak":"https://auth.ep-dev.tatamotors.com",
+            "host":"https://api.ep-dev.tatamotors.com",
+            "client_id":"configurator",
+            "username":"configurator-service",
+            "password":"TyZ47y$##7tOL^MR8MhS",
+            "client_secret":"5caed146-b73c-46ff-8f30-c5399dc91225",
+            "grant_type":"password"
+        }
+    },
+"RUNSERVER_IP":"127.0.0.1",
+"RUNSERVER_PORT":"8000",
+"test":"test"
+}
