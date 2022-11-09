@@ -2,6 +2,12 @@
 
 source env/bin/activate
 
+echo "ENV is activated  "
+
+export DEVELOPMENT_FLAG=local
+
+echo "DEVELOPMENT_FLAG is set on Local "
+
 cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line
 
 python3 manage.py makemigrations
@@ -10,7 +16,7 @@ python3 manage.py collectstatic -- no-input
 
 echo "Migrations done"
 
-cd /var/lib/jenkins/workspace/django-cicd
+cd /var/lib/jenkins/workspace/Python CI-CD Pipe Line
 
 sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
