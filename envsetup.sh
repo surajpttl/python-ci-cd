@@ -7,6 +7,8 @@ else
     sudo python3 -m venv env
 fi
 
+sudo chmod -R 777 env
+
 source env/bin/activate
 
 echo "Python virtual environment activated." 
