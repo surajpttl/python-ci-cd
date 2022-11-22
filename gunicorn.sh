@@ -1,15 +1,17 @@
 #!/bin/bash
 sudo chmod 777 var/lib/jenkins/workspace/python-ci-cd-testing
-source env/bin/activate
-#source barcode-env/bin/activate
+#source env/bin/activate
+source barcode-env/bin/activate
 echo "ENV is activated  "
 export DEVELOPMENT_FLAG=local
 echo "DEVELOPMENT_FLAG is set on Local "
+sudo chmod 777 var/lib/jenkins/workspace/python-ci-cd-testing
 cd /var/lib/jenkins/workspace/python-ci-cd-testing
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py collectstatic -- no-input
 echo "Migrations done"
+
 python3 manage.py runserver 8003
 
 #cd /var/lib/jenkins/workspace/python-ci-cd-testing
