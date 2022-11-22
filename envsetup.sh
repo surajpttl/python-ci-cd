@@ -22,6 +22,4 @@ else
     mkdir logs
     touch logs/error.log logs/access.log
 fi
-
-sudo chmod 777 var/lib/jenkins/workspace/python-ci-cd-testing
 sudo chmod -R 777 logs

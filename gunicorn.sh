@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo chmod 777 var/lib/jenkins/workspace/python-ci-cd-testing
 source env/bin/activate
 #source barcode-env/bin/activate
 echo "ENV is activated  "
