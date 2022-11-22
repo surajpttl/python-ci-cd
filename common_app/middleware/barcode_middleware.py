@@ -13,7 +13,7 @@ class CheckUserSession(MiddlewareMixin):
         #return self.get_response(request)
         if "digital_twin" not in request.path:
             if request.headers.get('Authorization')==None:
-                return send_response("Token not found")
+                return send_response("Token not found testing in docker ")
             if request.headers.get('Authorization'):
                 auth_type, auth = request.headers.get('Authorization').split(' ', 1)
                 if not auth_type.lower() == 'bearer':
